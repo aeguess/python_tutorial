@@ -15,7 +15,27 @@ List (Example: ['a', 1, '42', 'springFIELD', 'a1-43-24', 26.0] )
 ```
 (NOTE: There's technically also a dict() datatype, which allows you to store key-value pairs, but I've personally found that the Pandas library has sufficient functions and the Pandas.DataFrame() object does everything you'd need from the native dict() type, and more). 
 
--> A Boolean is simply a True/False. This is useful for indexing through lists, or applying screening parameters, or executing an if/else statement. E.g., "if X is True, do Y". 
+-> A Boolean is simply a True/False. This is useful for indexing through lists, or applying screening parameters, or executing an if/else statement. E.g., 
+
+```
+X = True
+
+if X is True:
+   print("Y")
+
+```
+
+Booleans can also be obtained through logical statements.
+
+```
+my_list = [1, 2, 3, 4, 5]
+my_list_bool = []
+
+for num in my_list:
+    my_list_bool.append(num > 2) # append a True/False depending on whether num is greater than 2
+
+print(my_list_bool) # returns [False, False, True, True, True]
+```
 
 -> a string are anything in "quotes" (so for example, the word Hello would need to be passed as 'Hello' or "Hello.  You can also pass numbers, special characters, or combinations of these into Python. 'app1e pi3 is-my-fav0rite ## f@@d' is a valid string. Without quotes, Python would return an error. During the Camp Fire project, this was relevant because housing data was often in the form of "XX-1111", which was a combination of numbers (1111), letters (XX), and special characters (-). To separate whether an animal was outside, I had to cut off the "-1111" from the string, and exclusively obtain the "XX".
 
@@ -33,7 +53,7 @@ for number in my_list:
 print(my_list) # returns [1, 4, 9, 16]
 ```
 
-The structure of a function can be written like so:
+Now, to make a set of code reusable across a program, it's stored in functions. The structure of a function can be written like so:
 ```
 def my_function():
     print("Hello world")
@@ -50,3 +70,6 @@ my_function() # calls my_function... but this errors!
 my_function("Joe") # calls my_function, passing the string "Joe" as an input argument. 
 ```
 
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
