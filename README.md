@@ -1,4 +1,4 @@
-# python_tutorial
+# Data types
 
 The main data types native to Python are:
 ```
@@ -71,5 +71,18 @@ my_function("Joe") # calls my_function, passing the string "Joe" as an input arg
 ```
 
 ----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
+
+# What code 
+
+For this tutorial, I've attached a sample .csv file that looks like:
+```
+Animal | Sex | Infected |
+1      |  M  |    N     |
+2      |  F  |    Y     |
+3      |  M  |    N     |
+4      |  F  |    Y     |
+5      |  M  |    Y     |
+6      |  F  |    N     |
+```
+
+For this first tutorial, write a function that
